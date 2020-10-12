@@ -59,7 +59,19 @@ model = torch.hub.load('pytorch/vision:v0.6.0', 'mobilenet_v2', pretrained=True)
 for param in model.parameters():
     param.requires_grad = False
 
-model.classifier[1] = nn.Sequential(nn.Linear(1280, 256),nn.ReLU(), nn.Dropout(0.4), nn.Linear(256, 2), nn.LogSoftmax(dim=1))
+model.classifier[1] = nn.Sequential(
+    nn.Linear(1280, 256),
+    nn.ReLU(), 
+    nn.Linear(256, 128),
+    nn.ReLU(), 
+    nn.Dropout(0.4), 
+    nn.Linear(128, 64),
+    nn.ReLU(),
+    nn.Linear(64, 32),
+    nn.ReLU(),
+    nn.Dropout(0.4), 
+    nn.Linear(32, 2), 
+    nn.LogSoftmax(dim=1))
 
 #checking GPU Avaibility
 if torch.cuda.is_available():
