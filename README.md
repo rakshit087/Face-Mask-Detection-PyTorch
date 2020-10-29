@@ -98,6 +98,6 @@ Resources, study material and everything in between -
 
 <a href = "https://pytorch.org/hub/pytorch_vision_mobilenet_v2/"> MobileNet with Pytorch </a> I used official documentations as a reference for transfer learning. <br>
 
-<a href = "https://github.com/chandrikadeb7/Face-Mask-Detection"> Chandrika Deb's Mask Detector </a> It is a similer project, so whenever I was lost, I used this as a reference. Also this Readme is heavily inspired by her Readme <br>
+<a href = "https://github.com/chandrikadeb7/Face-Mask-Detection"> Chandrika Deb's Mask Detector </a> It is a similar project, so whenever I was lost, I used this as a reference. Also the Readme of this project is heavily inspired by her's<br>
 
 PS-I recently learned deep learning, so there may be a better approch to this project. Any kind of improvement or suggestions are most welcomed.
