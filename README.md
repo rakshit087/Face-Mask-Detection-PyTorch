@@ -82,7 +82,7 @@ The model used Transfer Learning using MobileNetv2 (The parameters were freezed)
     
 <hr>    
 
-## :warning: Issues and Limitaions
+## :warning: Issues and Limitations
 
 :small_blue_diamond: The model is having a hard time to detect dark masks, I tried to improve it by adding some dark mask images but somhow, the model started giving false positive to by beard face. :stuck_out_tongue:
 
