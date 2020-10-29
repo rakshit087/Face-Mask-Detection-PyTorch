@@ -3,10 +3,7 @@ import cv2
 import os
 from tqdm import tqdm
 
-
 base_dir = os.path.dirname(__file__)
-prototxt_path = os.path.join(base_dir + r'/deploy.prototxt')
-faceDetect_path = os.path.join(base_dir + r'/faceDetect.caffemodel')
 
 def detect_face(image,name):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -21,8 +18,6 @@ def detect_face(image,name):
     for (x, y, w, h) in faces:
         roi_color = image[y:y + h, x:x + w]
         cv2.imwrite(name, roi_color)
-
-
 
 count=0
 for filename in tqdm(os.listdir(base_dir+"/images/")):
