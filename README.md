@@ -1,7 +1,7 @@
-<h1 align="center">Face Mask Detector using PyTorch</h1>
+<h1 align="center">Face Mask Detection using PyTorch</h1>
 
 <h5 align="center">
-  A simple Face Mask Detector created using PyTorch and OpenCV. 
+  A simple Face Mask Detection Model created using PyTorch and OpenCV. 
 </h5>
 
 <hr>
